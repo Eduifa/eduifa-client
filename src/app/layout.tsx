@@ -67,6 +67,10 @@ export default function RootLayout({
         />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
         <link rel="manifest" href="/site.webmanifest" />
+        <meta name="robots" content="index, follow" />
+        <meta name="googlebot" content="index, follow" />
+        <meta name="author" content="Olajide Abdul Qahar Dolapo" />
+        
       </head>
       <body className={`antialiased !${appDefaultFont.className}`}>
         <Navbar />
