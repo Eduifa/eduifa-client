@@ -57,13 +57,13 @@ export default function Hero() {
 
   return (
     <motion.section
-      className="w-full min-h-screen bg-white text-black flex flex-col items-center justify-center px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-primary/10 to-indigo-100"
+      className="!container min-h-screen bg-white text-black flex flex-col items-center justify-center px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-primary/10 to-indigo-100 "
       initial="hidden"
       animate={isVisible ? "visible" : "hidden"}
       variants={containerVariants}
     >
       <Toaster />
-      <motion.div className="w-full max-w-6xl" variants={itemVariants}>
+      <motion.div className="w-full max-w-6xl " variants={itemVariants}>
         <motion.div
           className="flex justify-center mb-12"
           variants={itemVariants}
@@ -93,7 +93,7 @@ export default function Hero() {
         </motion.div>
 
         <motion.h1
-          className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-center mb-6 bg-clip-text text-transparent bg-gradient-to-r from-gray-900 to-gray-600"
+          className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-center mb-6 bg-clip-text text-transparent bg-gradient-to-r from-gray-900 to-gray-600 text-balance"
           variants={itemVariants}
         >
           Revolutionize{" "}

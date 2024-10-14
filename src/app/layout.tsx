@@ -70,9 +70,8 @@ export default function RootLayout({
         <meta name="robots" content="index, follow" />
         <meta name="googlebot" content="index, follow" />
         <meta name="author" content="Olajide Abdul Qahar Dolapo" />
-        
       </head>
-      <body className={`antialiased !${appDefaultFont.className}`}>
+      <body className={`antialiased !${appDefaultFont.className} !container `}>
         <Navbar />
         <main>{children}</main>
         <footer>{/* Add footer content here */}</footer>
