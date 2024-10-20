@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import Navbar from "@/components/navbar";
 import { appDefaultFont } from "@/lib/fonts";
 
 // Updated metadata for better SEO
@@ -71,10 +70,8 @@ export default function RootLayout({
         <meta name="googlebot" content="index, follow" />
         <meta name="author" content="Olajide Abdul Qahar Dolapo" />
       </head>
-      <body className={`antialiased !${appDefaultFont.className} !container `}>
-        <Navbar />
-        <main>{children}</main>
-        <footer>{/* Add footer content here */}</footer>
+      <body className={`antialiased !${appDefaultFont.className}  `}>
+        {children}
       </body>
     </html>
   );
